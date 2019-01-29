@@ -33,7 +33,6 @@ return [
         'path' => 'dev',
         'setWritable' => [
             'api/runtime',
-            'api/assets',
             'backend/runtime',
             'backend/web/assets',
             'frontend/runtime',

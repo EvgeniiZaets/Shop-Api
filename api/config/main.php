@@ -10,10 +10,10 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'frontend\controllers',
+    'controllerNamespace' => 'api\controllers',
     'components' => [
         'request' => [
-            'parser' => [
+            'parsers' => [
                 // Если в запросе будет в заголовке Content-Type: application/json;
                 // То, тело запроса будет парситься как json.
                 'application/json' => 'yii\web\JsonParser'

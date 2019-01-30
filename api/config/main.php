@@ -46,11 +46,10 @@ return [
         'urlManager' => [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
+            'enableStrictParsing' => true,
             'rules' => [
                 '' => 'site/index',
-                '<_c:[\w]+>' => '<_c>/index',
-                '<_c:[\w]+>/<id:\d+>' => '<_c>/view',
-                '<_c:[\w]+>/<id:\d+>/<_a:[\w-]+' => '<_c>/<_a>',
+                'auth' => 'site/login',
             ],
         ],
     ],

@@ -29,8 +29,27 @@
  * ```
  */
 return [
-    'Development' => [
-        'path' => 'dev',
+    'Docker' => [
+        'path' => 'docker',
+        'setWritable' => [
+            'api/runtime',
+            'backend/runtime',
+            'backend/web/assets',
+            'frontend/runtime',
+            'frontend/web/assets',
+        ],
+        'setExecutable' => [
+            'yii',
+            'yii_test',
+        ],
+        'setCookieValidationKey' => [
+            'api/config/main-local.php',
+            'backend/config/main-local.php',
+            'frontend/config/main-local.php',
+        ],
+    ],
+    'Laradock' => [
+        'path' => 'laradock',
         'setWritable' => [
             'api/runtime',
             'backend/runtime',

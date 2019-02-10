@@ -4,7 +4,9 @@ modules:
     enabled:
         - REST:
             depends: PhpBrowser
-            url: http://api.shop.loc
+#            url: http://api.shop.loc
+#            ip to run tests inside container (getting ip: sudo iptables -S)
+            url: http://172.24.0.5
             part: [json]
         - Yii2:
             part: [orm, fixtures]

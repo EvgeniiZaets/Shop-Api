@@ -50,6 +50,7 @@ return [
             'rules' => [
                 '' => 'site/index',
                 'auth' => 'site/login',
+                'products' => 'product/index',
             ],
         ],
     ],
